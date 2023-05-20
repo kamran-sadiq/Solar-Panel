@@ -65,6 +65,12 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+.img-logo {
+	max-width: 65% !important;
+	height: auto;
+	position: relative;
+	top:2px;
+}
 
 h1,
 h2,
@@ -327,7 +333,7 @@ ul#nav li a {
 	color: #252a34;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 15px;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing: 1px;
 	padding: 7px 15px;
 	position: relative;
@@ -344,7 +350,7 @@ ul#nav li a {
 ul#nav li.active a,
 ul#nav li a:hover {
 	color: #0E89A8;
-	text-decoration: line-through;
+	
 }
 
 .is-sticky .mainmenu-area {
@@ -588,7 +594,7 @@ ul#nav li a:hover {
 	animation-delay: 0.3s;
 	color: #ffffff;
 	font-size: 45px;
-	font-weight: 700;
+	font-weight: 500;
 	line-height: 1;
 	margin-bottom: 30px;
 	text-transform: capitalize;
@@ -721,14 +727,14 @@ ul#nav li a:hover {
 }
 
 .slide-one .slider-bg {
-	background: url(img/slider/slide_2.jpg)no-repeat scroll center center / cover;
+	background: url(img/slider/slide_5.jpeg)no-repeat scroll center center / cover;
 }
 
 .slide-two .slider-bg {
-	background: url(img/slider/slide_4.jpg)no-repeat scroll center center / cover;
+	background: url(img/slider/slide_6.jpeg)no-repeat scroll center center / cover;
 }
 .slide-three .slider-bg {
-	background: url(img/slider/slide_3.jpg)no-repeat scroll center center / cover;
+	background: url(img/slider/slide_8.jpeg)no-repeat scroll center center / cover;
 }
 
 .welcome-slider-area.owl-carousel .owl-nav>div {
@@ -743,6 +749,7 @@ ul#nav li a:hover {
 	transition: all 0.3s ease 0s;
 	width: 40px;
 	position: absolute;
+	border-radius: 23px;
 }
 
 .welcome-slider-area.owl-carousel .owl-controls {
@@ -1234,6 +1241,10 @@ h3.counter {
 	color: #fff;
 }
 
+.brands-title{
+	color: black;
+}
+
 .single-team {
 	background: #fff none repeat scroll 0 0;
 	border-radius: 5px;
@@ -1560,7 +1571,7 @@ ul.social-bookmark {
 }
 
 .contact-form button {
-	background: #060606 none repeat scroll 0 0;
+	background: #0E89A8 none repeat scroll 0 0;
 	border: 0 none;
 	color: #ffffff;
 	font-size: 18px;
@@ -1606,6 +1617,12 @@ a.scrolltotop:hover {
 	background: #0E89A8;
 }
 
+.btn-header-quote{
+	border-radius: 2px;
+	background: #0E89A8 !important;
+	color : #fff !important;
+}
+
 
 /*-----------------------------
     13. PRELOADER
@@ -1613,4 +1630,120 @@ a.scrolltotop:hover {
 
 .preloader-spinner {
 	border: 5px solid #0E89A8;
+}
+
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
 }
